@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<!-- Code written by Joshua Atanu-->
+	<!-- Phone Number : +2349025743515 -->
+	<!-- E-mail : atanu.joshua@gmail.com-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Photographers portfolio">
+    <meta name="keywords" content="photography, abuja photographers, photography, black and white,">
+    <meta name="author" content="Joshua Atanu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        #map{
+            height: 500px;
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+          width: 1px;
+        }
+        ::-webkit-scrollbar-track {
+         background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+    </style>
+    <title>Contact US</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient p-2 fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"> <img src="icon/iconmonstr-photo-camera-12.svg"></a>
+            <h4 class="ml-20 text-white m-50" style="font-family: silka;">Atanu  & Co</h4>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav" type="button">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+               <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item m "><a href="index.html" class="nav-link text-white bold">Home</a></li>
+                    <li class="nav-item"><a href="service.html" class="nav-link text-white bold ">Services</a></li>
+                    <li class="nav-item ">
+                        <a href="portfolio.html" class="nav-link text-white bold ">portfolio</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link text-white bold">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link  bold btn-grey text-dark">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        <div class="jumbotron-one">
+            <div class="text-left p-5">
+                <h3 class="display-2 work">We would <br> like to hear <br> from you </h3>
+                    <p class="btn btn-gradient navbar-toggle text-white ml-12"><a href="#contact" class=" text-white no-decor">Contact Us</a> </p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row text-center">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 m-2 p-3 shadow cat-o">
+                    <img src="Icon/iconmonstr-location-1.svg" alt="">
+                    <p class="mt-3">2310, Apo resettlemnet ,zone E.</p>
+                </div>
+                <div class="col-md-3 m-2 p-3 shadow">
+                    <img src="Icon/iconmonstr-phone-3.svg" alt="">
+                    <p class="mt-3">+2349025743515</p>
+                </div>
+                <div class="col-md-3  m-2 shadow">
+                    <img src="icon/iconmonstr-email-3.svg" alt="">
+                    <p class="mt-3" >hello@atanu.com</p>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5 p-5" id="contact">
+                <h3 class="text-left mb-3">Contact Us</h3>
+                <form action="">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="text" name="" id="" class="form-control border-zero" placeholder="First Name">
+                                </div>
+                                <div class="col-md-5 mt-c">
+                                    <input type="text" name="" id="" class="form-control border-zero" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-5">
+                                    <input type="email" name="" id="" class="form-control border-zero" placeholder="Email">
+                                </div>
+                                <div class="col-md-5 mt-c">
+                                    <input type="tel" name="" id="" class="form-control border-zero" placeholder="Phone">
+                                </div>
+                            </div>
+                                <div class="from-group mt-3">
+                                    <div class="form-group">
+                                        <textarea class="form-control text-area-width" placeholder="Your Message" name="" id="" rows="3"></textarea>
+                                    </div>
+                                </div>
+                        </div>
+
+                   </div>
+                    <button type="submit" class="btn btn-primary text-uppercase">Send message</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-outline-primary text-uppercase text-dark"><img src="icon/iconmonstr-facebook-messenger-1.svg" alt=""> Messenger </button>
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="map">
+                    <h3 class="text-left mt-16">Find Us</h3>
+                    <script>
+                        function initMap(){
+                            var  location = {lat:9.061460, lng:7.500640};
+                            var map = new google.maps.Map(document.getElementById("map"),{
+                                zoom: 4,
+                                center: location
+                            });
+                            var marker = new google.maps.Marker({
+                                position: location,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap">
+                    </script>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <script src="js/jquery.js"></script>
+ <script src="js/popper.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+<  <footer>
+    <div class="container-fluid bg-black-nb ">
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <h3 class="text-left h5 ml-5 mt-10 text-white">About Us</h3>
+               
+                <p class="ml-5  text-muted">
+                    My name is Joshua Atanu and I am a highly <br>
+                    talented photographer, creative expert and <br>
+                    videographer.my services are aimed <br>
+                    at business that require anew look to <br>
+                    attract more potential customers.My <br>
+                    My experience allows to handle even <br>
+                    the most complex tasks
+                </p>
+            </div>
+            <div class="col-md-4">
+            
+                <h3 class="text-left h5 ml-5 mt-12 text-white">Contact Information</h3>
+                <div class="ml-5">
+                <img src="icon/iconmonstr-location-1 copy.svg"  height="20" width="20" alt=""><span class="text-muted">&nbsp;&nbsp; 2311,Apo resettlement zone e. </span><br>
+                <br>
+                <img src="icon/iconmonstr-phone-3 - Copy.svg"  height="20" width="20"  alt=""><span class="text-muted ">&nbsp;&nbsp; +234-902-574-3515 </span> <br>
+                <br>
+                <img src="icon/iconmonstr-email-3 - Copy.svg"  height="20" width="20"  alt=""><span class="text-muted ">&nbsp;&nbsp; atanu.joshua@gmail.com </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-left h5 ml-5 mt-12 text-white">QuickLinks</h3>
+                <ul class="list-unstyled ml-5">
+                    <li><a href="#" class="text-muted">FAQ</a></li>
+                    <li><a href="#"class="text-muted" >Gallery</a></li>
+                    <li><a href="#" class="text-muted">FeedBack</a></li>
+                </ul>
+            </div>
+        </div>
+    <p class="text-center text-muted">Joshua Atanu&copy;2021</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
